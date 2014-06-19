@@ -1,0 +1,233 @@
+<html>
+<head>
+<style>
+/* The image of the website is a magnificent achievement of Cosmin Capitanu:
+http://dribbble.com/Radium
+And he owns the rights.
+But you can use the rest of the code as you see fit.
+*/
+body{
+  text-align: center;
+  padding: 30px;
+  background: #EB6D58;
+}
+img{
+  animation: opacity 4s 1 ease;
+}
+
+@keyframes entre {
+	0% { 	
+      transform: perspective(2000) rotateX(-90deg);
+	}
+	100% { 
+      transform: perspective(2000) rotateX(0deg);
+	}
+}
+
+@keyframes opacity {
+	0% { 	
+      opacity: 0;
+	}
+	100% { 
+      opacity: 1;
+	}
+}
+
+.mbp{
+  margin: 0 auto;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  border: 20px solid #000;
+  transform-origin: bottom;
+  animation: entre 4s 1 ease;
+  background: #000;
+    img{
+      width: 100%;
+    } 
+}
+.bas{
+  margin: 0 auto;
+  background: darken(#FFF, 20%);
+  height: 22px;
+  width: 550px;
+  border-radius: 0 0 8px 8px;
+  border-bottom: 3px solid darken(#FFF, 40%);
+    &:before{
+      content:"";
+      margin: 0 auto;
+      background:  darken(#FFF, 30%);
+      height: 10px;
+      width: 80px;
+      display: block;
+      border-radius: 0 0 10px 10px;
+    }
+}
+
+.ip{
+  margin: 0 auto;
+  width: 89*2px;
+  height: 194*2px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid lighten(#000, 40%);
+     &:after{
+      content:"\2610";
+      text-align: center;
+      font-size: 13*2px;
+      color: darken(#FFF, 70%);
+      padding-left: 2px;
+      line-height: 29px;
+      display: block;
+      background: lighten(#000, 10%);
+      width: 15*2px;
+      height: 15*2px;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      top: -40px    
+    }
+}
+.iphone{
+  background: #000;
+  width: 80*2px;
+  height: 145*2px;
+  margin: 0 auto;
+  border-width: 25*2px 5*2px;
+  border-color: #000;
+  border-style: solid;
+  overflow: hidden;
+    img{
+      width: 180%;
+    }
+}
+
+.ipa{
+  margin: 0 auto;
+  width: 182*2px;
+  height: 243*2px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid lighten(#000, 40%);
+     &:after{
+      content:"\2610";
+      text-align: center;
+      font-size: 13*2px;
+      color: darken(#FFF, 70%);
+      padding-left: 2px;
+      line-height: 29px;
+      display: block;
+      background: lighten(#000, 10%);
+      width: 15*2px;
+      height: 15*2px;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      top: -38px;   
+    }
+}
+.ipad{
+  background: #000;
+  width: 145*2px;
+  height: 200*2px;
+  margin: 0 auto;
+  border-width: 22*2px 19*2px;
+  border-color: #000;
+  border-style: solid;
+  overflow: hidden;
+    img{
+      width: 150%;
+    }
+}
+
+.display{
+  margin: 0 auto;
+  width: 192*2.5px;
+  height: 120*2.5px;
+  overflow: hidden;
+  border: 20px solid #000;
+  border-radius: 10px;
+  background:  #000;
+    img{
+      width: 100%;
+    }
+}
+.feet{
+  width: 90px;
+  height: 70px;
+  background: darken(#FFF, 30%);
+  margin: 0 auto;
+  transform: perspective(200) rotateX(20deg);
+  transform-origin: top;
+    &:after{
+      content:"";
+      height: 5px;
+      border-radius: 2px;
+      width: 120px;
+      margin-left: -15px;
+      margin-top: 2px;
+      background: darken(#FFF, 40%);  
+      display: block;
+      transform: perspective(200) rotateX(-20deg);
+      position: absolute;
+      bottom : 0;
+    }
+}
+
+/* INLINE */
+
+[class*="device"]{
+  display: inline-block;
+  margin: 30px;
+  transform: scale(1);
+}
+.devicem{
+  width: 550px;
+}
+.deviced{
+  width: 520px;
+}
+.devicei{
+  width: 184px;
+}
+.deviceipa{
+  width: 328px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="devicem">
+  <div class="mbp">
+    <img src="http://dribbble.s3.amazonaws.com/users/78637/screenshots/937610/attachments/105013/Student_Guide_A_Lot_Bigger.jpg" alt="site">
+  </div>
+  <div class="bas"></div>
+</div>
+<div class="deviced">
+  <div class="display">
+    <img src="http://dribbble.s3.amazonaws.com/users/78637/screenshots/937610/attachments/105013/Student_Guide_A_Lot_Bigger.jpg" alt="site">
+  </div>
+  <div class="feet"></div>
+</div>
+<div class="devicei">
+  <div class="ip">
+  <div class="iphone">
+       <img src="http://dribbble.s3.amazonaws.com/users/78637/screenshots/937610/attachments/105013/Student_Guide_A_Lot_Bigger.jpg" alt="site">
+  </div>
+  </div>
+</div>
+<div class="deviceipa">
+  <div class="ipa">
+    <div class="ipad">
+      <img src="http://dribbble.s3.amazonaws.com/users/78637/screenshots/937610/attachments/105013/Student_Guide_A_Lot_Bigger.jpg" alt="site">
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
