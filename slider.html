@@ -459,13 +459,13 @@ a.nice-link {
 </style>
 </head>
 <body>
-- var config={count:6,default_slide: 2,infinity:false,inside:false,group_name:'slides',presentation_mode: true }
+var config={count:6,default_slide: 2,infinity:false,inside:false,group_name:'slides',presentation_mode: true }
 
 if(config.presentation_mode) 
   h1(style="padding-top: 20px;") CSS Slider
   h2 Pure CSS Slider. No JS. Because it is possieble!!
 
-- var _list = new Array(config.count);
+var _list = new Array(config.count);
 div.csslider#slider1(class=(config.inside? 'inside ':'') + (config.infinity? 'infinity':''))
 
     each _ , i in _list
