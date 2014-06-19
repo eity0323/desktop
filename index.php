@@ -5,7 +5,7 @@
 <style>
 body { background:black; overflow:hidden; }
 #gif {
-  background:black;
+  background:white;
   padding:10px;
   height:80px;
   width:80px;
