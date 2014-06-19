@@ -3,7 +3,7 @@
 <head>
 
 <style>
-body { background:black; overflow:hidden; }
+body { background:white; overflow:hidden; }
 #gif {
   background:white;
   padding:10px;
