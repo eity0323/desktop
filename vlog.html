@@ -1,0 +1,126 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>vlog.it</title>
+<meta name="description" content="The Marco Rosella's rotating HTML5 (with SVG animations) collection of Vimeo and YouTube favourites.">
+<meta name="keywords" content="video, SVG, HTML5, HTML 5, HTML, CSS3, motion graphics, javascript" />
+<meta name="author" content="Marco Rosella - www.centralscrutinizer.it"/>
+<meta property="og:image" content="http://www.vlog.it/img/ogvlogit.jpg"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="http://vlog.it/css/style.css"/>
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Unna'/>
+<link rel="shortcut icon" href="http://vlog.it/img/favicon.gif"/> 
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://vlog.it/js/libs/raphael-min.js"></script>
+<script src="http://vlog.it/js/libs/modernizr-2.0.6.min.js"></script>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<script src="http://vlog.it/data.php"></script>
+<script src="http://vlog.it/js/vlogitcontrol.min.js"></script>
+<script>
+	var tag = document.createElement('script');
+	tag.src = "http://www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	var player;
+	function onYouTubePlayerAPIReady() {
+		playeryt = new YT.Player('playeryt',{
+			height: '334',
+			width: '592',
+			playerVars: { 'autoplay': 1, 'controls': 0 },
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	};
+	 
+	function onPlayerReady(event) {
+		event.target.playVideo();
+	}
+ 
+	var done = false;
+	function onPlayerStateChange(event) {}
+</script>
+</head>
+<body>
+<div id="animintro">
+</div>
+<div id="vlogitwheel"> 
+</div>
+
+<div id="logo">
+	<h1>vlog.it</h1>
+	<div id="logodeco"></div>
+	<nav id="menu">
+		<ul>
+			<li id="vmmenu"><a href="#" class="current">Vimeo</a></li>
+			<li id="ytmenu"><a href="#">YouTube</a></li>
+		</ul>
+	</nav>
+	<div id="aboutmenu"><a href="#">about</a></div>
+	<div id="share"><a href="#">Share</a></div>
+</div>
+
+<div id="animtop">
+</div>
+
+<div id="tubiamo">
+ 	<iframe id="playeryt" width="592" height="334" frameborder="0" src="" type="text/html"></iframe>
+</div>
+
+<div id="vimejo">
+</div>
+
+<div id="videobox">
+</div>
+
+<div id="descr">
+	<h3><span></span></h3>
+	<h4><span></span></h4>
+</div>
+
+<div id="about">
+	<h2>about</h2>
+	<div id="about_content">
+		<p>Hi, this is <a href="http://www.twitter.com/Marco_Rosella" target="_blank">Marco Rosella</a>: welcome to vlog.it, a random HTML5-powered (with SVG animations) rotating collection of my 313 Vimeo Likes and 1011 YouTube Favorites.</p>
+		<div id="infos">
+		<p><em>Instructions</em>: Click on a moving slice, enjoy stuff. Switch between Vimeo and Youtube videos under the logo.</p>
+			<p>More info on <a href="http://www.centralscrutinizer.it/en/video/vlog-it-iv-svg-version" target="_blank">this blog post</a>; follow the updates here: <a class="socialicon" href="https://www.facebook.com/pages/Central-Scrutinizer-Studio/117827481644185" target="_blank"><img src="img/fblogo.png" alt="Facebook Logo"/></a> <a href="http://twitter.com/#!/Marco_Rosella" class="socialicon" target="_blank"><img src="img/twlogo.png" alt="Twitter Logo"/></a>
+			<p>Thanks to <a href="http://www.buzzler.com" target="_blank">Federico Orr&ugrave;</a> for the server side system and to all the videos' authors.</p>
+		</div>
+		<div id="awaawa">
+			<p><em>This project has been named as finalist for the <a href="http://sxsw.com/interactive/awards/finalists" target="_blank">15th SXSW Interactive Awards</a> in the Motion Graphics category, won the <a href="http://www.awwwards.com/web-design-awards/vlog-it" target="_blank">Awwwards Site of the Day</a> and has been featured in <a href="http://www.centralscrutinizer.it/en/xml/svg/awwwards-sotd-and-more/" target="_blank">countless design galleries</a>.</p>
+		</div>
+	</div>
+ </div>
+<div id="browser">
+	<div id="browser_inner">
+		<h2>please update</h2>
+		The sage man says:
+		<span>"Old is gold!"</span>
+		but for this time, to enjoy <em>vlog.it</em>, please update your browser:
+		<ul>
+			<li id="ff"><a href="http://www.mozilla.org/firefox/" target="_blank">Firefox</a></li>
+			<li id="chr"><a href="http://www.google.com/chrome" target="_blank">Chrome</a></li>
+			<li id="saf"><a href="http://www.apple.com/safari/download/" target="_blank">Safari</a></li>
+			<li id="op"><a href="http://www.opera.com/download/" target="_blank">Opera</a></li>
+			<li id="inex"><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">Internet Explorer 9</a></li>
+		</ul>
+	</div>
+</div>
+<div id="br_mask"></div>
+
+
+
+<div id="close"><a href="#"></a></div>
+<div id="bumper"></div>
+
+<div id="webby"><a href="http://www.webbyawards.com/webbys/current.php?season=16" target="_blank"><img src="http://vlog.it/img/vlogit_webbyvote.png"/></a></div>
+     
+</body>
+</html>
