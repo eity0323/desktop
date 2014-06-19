@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 96px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mask-galaxy {
+    background: url(http://karmajello.com/postcont/2014/01/earth-from-space-1.jpg) center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: travelGalaxy 10s linear infinite;
+    -moz-animation: travelGalaxy 10s linear infinite;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-animation: travelGalaxy 10s linear infinite;
+    -o-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-animation: travelGalaxy 10s linear infinite;
+}
+
+@-webkit-keyframes travelGalaxy {
+    0% {background-position: right bottom;}
+    100% {background-position: left top;}
+}
+@-moz-keyframes travelGalaxy {
+    0% {background-position: right bottom;}
+    100% {background-position: left top;}
+}
+</style>
+</head>
+
+
+<body>
+<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin" rel="stylesheet" type="text/css">
+
+<article class="mask-galaxy">
+    <h1>Vitalii Mazur</h1>
+</article>
+</body>
