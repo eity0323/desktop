@@ -1,0 +1,170 @@
+<html>
+  <head>
+  <style>
+  @-webkit-keyframes apear {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
+
+
+
+
+body {background-image: url("http://i.imgur.com/Qyrd5ic.png");
+ background-size: 800px 600px;
+ background-repeat: no-repeat;
+}
+
+#m0 {display: block;
+width: 140px;
+height: 190px;
+  position:absolute;
+left:330px;
+top:280px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/QjrluiA.png);
+  background-size: 800px 600px;
+  background-position: -330px -280px;
+  visibility: hidden;
+  -webkit-animation:apear 2s 2s;
+}
+
+.m1 {display: block;
+width: 800px;
+height: 500px;
+  position:absolute;
+left:0px;
+top:0px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/3i1RFi7.png);
+  background-size: 800px 600px;
+  visibility: hidden;
+  -webkit-animation:apear 0.5s 4s;
+  
+}
+
+.m2 {display: block;
+width: 800px;
+height: 500px;
+  position:absolute;
+left:0px;
+top:0px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/xv0NwHN.png);
+  background-size: 800px 600px;
+  visibility: hidden;
+  -webkit-animation:apear 0.5s 4.5s;
+}
+
+.m3 {display: block;
+width: 800px;
+height: 500px;
+  position:absolute;
+left:0px;
+top:0px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/poRJghC.png);
+  background-size: 800px 600px;
+  visibility: hidden;
+  -webkit-animation:apear 0.5s 5s;
+}
+
+.m4 {display: block;
+width: 800px;
+height: 500px;
+  position:absolute;
+left:0px;
+top:0px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/O3405eI.png);
+  background-size: 800px 600px;
+  visibility: hidden;
+  -webkit-animation:apear 3s 5.5s;
+  animation-fill-mode:forwards
+}
+
+:target .m1 {-webkit-animation-play-state:paused;}
+:target .m2 {-webkit-animation-play-state:paused;}
+:target .m3 {-webkit-animation-play-state:paused;}
+:target .m4 {-webkit-animation-play-state:paused;}
+
+
+:target .md1 {display: block;
+width: 140px;
+height: 190px;
+  position:absolute;
+left:330px;
+top:280px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/8mFmZZT.png);
+  background-size: 800px 600px;
+  background-position: -330px -280px; 
+  visibility: hidden;
+  -webkit-animation:apear 0.5s;
+}
+
+:target .md2 {display: block;
+width: 140px;
+height: 190px;
+  position:absolute;
+left:330px;
+top:280px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/Iw6v6Sm.png);
+  background-size: 800px 600px;
+  background-position: -330px -280px; 
+  visibility: hidden;
+  -webkit-animation:apear 0.5s 0.5s;
+}
+
+:target .md3 {display: block;
+width: 140px;
+height: 190px;
+  position:absolute;
+left:330px;
+top:280px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/GCgdByh.png);
+  background-size: 800px 600px;
+  background-position: -330px -280px; 
+  visibility: hidden;
+  -webkit-animation:apear 0.5s 1s;
+}
+
+:target .md4 {display: block;
+width: 140px;
+height: 190px;
+  position:absolute;
+left:330px;
+top:280px;
+  background-repeat: no-repeat;
+  background-image: url(http://i.imgur.com/9QN8buU.png);
+  background-size: 800px 600px;
+  background-position: -330px -280px;
+  visibility: hidden;
+  -webkit-animation:apear 5s 1.5s;
+}
+
+  </style>
+  </head>
+<body>
+  
+
+  
+<div id="mm">
+  <a href="#mm"><div id="m0"></div></a>
+  
+  <div class="m1"></div>
+  <div class="m2"></div>
+  <div class="m3"></div>
+  <div class="m4"></div>
+  
+   <div class="md1"></div>
+   <div class="md2"></div>
+   <div class="md3"></div>
+   <div class="md4"></div>
+</div>
+  
+
+  
+</body>
+</html>
